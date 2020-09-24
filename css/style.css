@@ -1,0 +1,470 @@
+*{
+    box-sixing: border-box;
+    padding:0;
+    margin:0;
+}
+body {
+	background-color: #fffef2;
+	width:auto;
+	height:100vh;
+	overflow: visiable;
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+}
+@font-face{
+    font-family: "ZapfHumanist601BT";
+    src: url("./css/font/ZapfHumanist601BT-Roman.otf")format("opentype");
+}
+
+@font-face{
+    font-family: "SFPro";
+    src: url(/css/font/SF-Font-Pro.dmg)
+}
+/*
+.announcementbar{
+    background-color: rgba(166, 103, 43);
+    text-align: center;
+    
+}
+*/
+.header{
+    top:0px;
+    width:100%;
+    height:70px;
+    background-color:  rgba(37, 37, 37, 1);
+    position: relative;
+    z-index: 10;
+    position: fixed;
+    overflow: hidden;
+    
+    
+}
+.headAnnouncement{
+    height: 52px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: #a6672b;
+    
+}
+.headerContainer{
+    text-align: center;
+    padding-top: 13px;
+    
+}
+.headerContainer a{
+    text-decoration: none;
+    font-size: 14px;
+    color:#fffef2;
+    z-index: 1;
+    font-family: 'SFPro', sans-serif;
+}
+
+#navbar a{
+    font-weight: 500;
+    color: #fffef2;
+    font-family: 'ZapfHumanist601BT', Arial, sans-serif;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 23px 50px;
+}
+#navbar a:hover{
+    transform: scale(1.1);
+    color: rgba(166, 103, 43);
+}
+
+.content{
+    margin-top: 70px;
+        
+}
+
+/* Steams Container*/
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 120px 200px;
+    margin-bottom: 8px;
+    align-items: baseline;
+    width 1040px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    text-align: justify;
+}
+/*.flex-container row:after{
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #252525;
+}*/
+.item{
+/*    padding: 10px;*/
+    font-family: 'ZapfHumanist601BT', Arial, sans-serif;
+}
+.item h2{
+    font-size: 40px;
+    justify-self: flex-start;
+}
+.item p{
+    margin-left: -115px;
+    font-size: 18px;
+    color: #999999;
+    line-height: 26px;
+/*    padding: 0px 500px; */
+}
+.profilePic{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%; 
+    
+}
+.profilePic img{
+    width: 50px;
+    height: auto;
+    justify-self: flex-end;
+    margin-left: -8px;
+
+}
+.steams hr{
+    margin: 0 200px;
+}
+
+.pageTitle{
+    margin-top: 101px;
+    text-align: center;
+}
+
+.pageTitle h1{
+    font-family: 'ZapfHumanist601BT';
+    font-size: 72px;
+}
+
+.pageTitle p{
+    font-family: 'SFPro';
+    font-size: 18px;
+    margin-top: 10px;
+}
+/**/
+
+.group{
+    width: 1440;
+    height: auto;
+    align-items: center;
+    margin: 97px 39px;
+/*    display: flex;*/
+    justify-content: space-between;
+    align-content: center;
+    
+}
+section{
+    float: left;
+    font-size: 28px;
+    margin: 110px 63px;
+    font-family: 'ZapfHumanist601BT';
+    width: 400px;
+    height: auto;
+
+}
+.cropArticleImg{
+    width: 1342px;
+    height: 777px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.cropArticleImg img{
+    display: block;
+    align-self: center;
+/*    margin: 65px 39px;*/
+    margin: -87px 30px;
+    width: 100%;
+    height: auto;    
+}
+.cropArticleImgVertically {
+    width: 572.5px;
+    height: 777px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cropArticleImgVertically img{
+    display: block;
+    align-self: center;
+    margin: 0px -470px;
+    height: 100%; 
+    width: auto;
+}
+
+.row {
+    display:flex;
+}
+.column{
+    flex:50%;
+/*    padding-right: 100px;*/
+    margin-right: 70px;
+}
+aside{
+    margin: 110px 1.5% 0px 1.5%;
+    width: 640px;
+    height: auto;
+
+}
+
+.paragraph{
+    top: 0;
+    margin: 0px 600px;
+    width: 640px;
+    height: auto;
+}
+.paragraph h3{
+  font-family: 'SFPro';
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.paragraph h5{
+      font-family: 'SFPro';
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.paragraph p{
+      font-family: 'SFPro';
+    font-size: 18px;
+}
+
+
+
+.btn{
+    background-color: #fffef2;
+    text-align: left;
+    text-decoration: none;
+    padding: 20px 23px;
+    font-size: 16px;
+    font-family: 'ZapfHumanist601BT';
+    color: #252525;
+    margin-left: 658px;
+    margin-top: -60px;
+    width: 202px;
+    height: 63px;
+    cursor: pointer;
+    position: relative;
+    background: lighten(#fffef2, 3%); 
+    border: 1px solid rgba(37,37,37,0.4);
+    box-shadow: 0px 2px 0 darken(#fffef2, 5%), 2px 4px 6px darken($red, 2%);
+    transition: all 150ms linear;
+    justify-content: space-between;
+
+    
+    
+/*
+  span {
+    z-index: 20;
+  }
+*/
+
+/*
+  
+  &:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+  }
+*/
+}
+
+/*
+.btn span:hover {
+  
+  &:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+*/
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 60px;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.finalQuote{
+    text-align: center;
+    padding-top: 160px;
+    margin-bottom: 70px;
+}
+.finalQuote h3{
+    font-family: 'ZapfHumanist601BT';
+    font-size: 40px;
+    line-height: 37px;
+}
+.finalQuote p{
+    padding-top:50px;
+    font-size: 18px;
+    font-family: 'SFPro';
+    
+}
+
+
+footer{
+    flex-shrink: 0;
+    background-color: #fffef2;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: 'SFPro', sans-serif;
+}
+.footerContainer{
+    padding: 52px 38px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+/*    */
+}
+footer h6{
+    padding-bottom: 28px;
+    color:#999999;
+    font-size:14px;
+    letter-spacing:0;
+}
+footer h5{
+    font-size: 18px;
+    padding-bottom: 28px;
+    color:#999999;
+    letter-spacing:0;
+}
+footer h1{
+    font-size: 28px;
+    margin: 35px 0;
+    color: #999999;
+    
+}
+footer hr{
+    margin-top: -28px;
+    width: 426px;
+    
+    
+}
+footer p{
+    font-size: 14px;
+    color: #c2c2c2;
+    line-height: 23px;
+    width: 380px;
+    height: 67px;
+    margin: 28px 46.5px 70px 0;
+}
+footer a{
+    text-decoration: none;
+    text-transform:none;
+    font-size: 14px;
+    color: #252525;
+    letter-spacing: 0;
+
+}
+
+footer a:hover{
+    color: chocolate;
+}
+
+.footerLinks {
+    padding-left:0;
+    list-style:none;
+    color:#252525;
+}
+.footerLinks li{
+    display:block;
+    padding-bottom: 10px;
+}
+.footerLinks a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:chocolate;
+  text-decoration:none;
+}
+.footerLinks.inline li
+{
+  display:inline-block;
+}
+
+.footerCol{
+    margin-right: 144px;
+    display: inline-block;
+	text-decoration:  none;
+}
+
+.footerCol right{
+    font-size: 18px;
+}
+
+.footerCopyright
+{
+    width: 100%;
+    background-color: #252525;
+    font-size: 14px;
+    color: #fffef2;
+    z-index: 1;
+}
+
+
+
+@media (max-width:991px)
+{
+  .thefooter [class^=col-]
+  {
+    margin-bottom:30px;
+  }
+}
+
+@media (max-width:767px)
+{
+  .thefooter
+  {
+    padding-bottom:0;
+  }
+  footer .footerCopyright
+  {
+    text-align:center;
+  }
+}
+@media screen and (max-width: 580px) {
+    #navbar {
+    padding: 20px 10px !important;
+  }
+    #navbar a {
+    float: none;
+    display: inline;
+    text-align: right;
+  }
+}
