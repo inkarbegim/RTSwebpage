@@ -1,0 +1,30 @@
+/*
+( function( window, document, $ ) {
+	window.MDLabs = {};
+	MDLabs.snippets = function() {
+		$( '.snippet-tab' ).on( 'click', function() {
+			var tab = $( this ).data( 'snippet' );
+			$( '.snippet-tab, .snippet-content' ).removeClass( 'is-active' );
+			$( this ).addClass( 'is-active' );
+			$( '.snippet-content-' + tab ).addClass( 'is-active' );
+		});
+		new ClipboardJS( '.snippet-control-copy' );
+	}
+})( window, document, jQuery );
+*/
+
+window.MDLabs = {
+
+	copyLicense :function() {
+		var license = document.getElementsByClassName( 'copy-license' );
+		for ( var i = 0; i < license.length; i++ ) {
+			license[i].onclick = function( e ) {
+				var copyText = document.getElementById( 'license_key' );
+				copyText.select();
+				copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+				document.execCommand( 'copy' );
+			}
+		}
+	}
+
+};

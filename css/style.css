@@ -14,24 +14,18 @@ body {
 }
 @font-face{
     font-family: "ZapfHumanist601BT";
-    src: url("./css/font/ZapfHumanist601BT-Roman.otf")format("opentype");
+    src: url("./font/ZapfHumanist601BT-Roman.otf")format("opentype");
 }
 
 @font-face{
     font-family: "SFPro";
-    src: url(/css/font/SF-Font-Pro.dmg)
+    src: url(./font/SF-Font-Pro.dmg)
 }
-/*
-.announcementbar{
-    background-color: rgba(166, 103, 43);
-    text-align: center;
-    
-}
-*/
+
 .header{
     top:0px;
+    height: 122px;
     width:100%;
-    height:70px;
     background-color:  rgba(37, 37, 37, 1);
     position: relative;
     z-index: 10;
@@ -40,25 +34,57 @@ body {
     
     
 }
-.headAnnouncement{
+.announcementBar {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    z-index: 15;
+    background-color: #a6672b;
     height: 52px;
     width: 100%;
+    display: flex;
     text-align: center;
-    text-decoration: none;
-    background-color: #a6672b;
     
 }
-.headerContainer{
-    text-align: center;
-    padding-top: 13px;
-    
+.announcementBar > p {
+    line-height: 20px;
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)    
+
+} 
+.announcementBar > button{
+    position: absolute;
+    top: 25%;
+    left: 95%;  
 }
-.headerContainer a{
+
+.announcementBar button {
+    border: 0;
+    box-shadow: 0;
+    border-radius: 50%;
+    height: 26px;
+    width: 26px;
+    background-color: #f4f1ee;
+
+}
+
+.announcementBar span{
+/*    font-weight: bolder;*/
+    font-size: 25px;
+}
+.announcementBar p, a {
     text-decoration: none;
     font-size: 14px;
     color:#fffef2;
-    z-index: 1;
-    font-family: 'SFPro', sans-serif;
+    font-family: 'SFPro', sans-serif; 
+    
+/*    Roboto-M    */
 }
 
 #navbar a{
@@ -86,10 +112,10 @@ body {
 .flex-container{
     display: flex;
     flex-wrap: wrap;
-    margin: 120px 200px;
+    margin: 172px 200px 86px 200px;
     margin-bottom: 8px;
     align-items: baseline;
-    width 1040px;
+/*    width 1040px;*/
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
@@ -346,7 +372,7 @@ footer{
     font-family: 'SFPro', sans-serif;
 }
 .footerContainer{
-    padding: 52px 38px;
+    padding: 52px 38px 0 38px;
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
@@ -430,13 +456,27 @@ footer a:hover{
 
 .footerCopyright
 {
+    height: 80px;
     width: 100%;
     background-color: #252525;
-    font-size: 14px;
-    color: #fffef2;
-    z-index: 1;
+}
+.footerCopyright .footerContainer{
+    padding-top: 35px;
 }
 
+.footerCopyright a{
+/*    font-size: 70%;*/
+    text-decoration: none;
+    font-size: 14px;
+    color: #fffef2;
+    font-family: 'SFPro', sans-serif;
+
+}
+.thefooter{
+    width: 100%;
+}
+
+/*
 
 
 @media (max-width:991px)
@@ -467,4 +507,4 @@ footer a:hover{
     display: inline;
     text-align: right;
   }
-}
+}*/
