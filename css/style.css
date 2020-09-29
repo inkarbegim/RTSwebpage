@@ -90,6 +90,7 @@ body {
     font-weight: 500;
     color: #fffef2;
     font-family: 'ZapfHumanist601BT', Arial, sans-serif;
+    font-weight: normal;
     float: right;
     text-align: center;
     text-decoration: none;
@@ -131,6 +132,7 @@ body {
 .item h2{
     font-size: 40px;
     justify-self: flex-start;
+    font-weight: normal;
 }
 .item p{
     margin-left: -115px;
@@ -165,6 +167,7 @@ body {
 
 .pageTitle h1{
     font-family: 'ZapfHumanist601BT';
+    font-weight: normal;
     font-size: 72px;
 }
 
@@ -190,6 +193,7 @@ section{
     font-size: 28px;
     margin: 110px 63px;
     font-family: 'ZapfHumanist601BT';
+    font-weight: normal;
     width: 400px;
     height: auto;
 
@@ -270,6 +274,7 @@ aside{
     padding: 20px 23px;
     font-size: 16px;
     font-family: 'ZapfHumanist601BT';
+    font-weight: normal;
     color: #252525;
     margin-left: 658px;
     margin-top: -60px;
@@ -351,6 +356,7 @@ aside{
 }
 .finalQuote h3{
     font-family: 'ZapfHumanist601BT';
+    font-weight: normal;
     font-size: 40px;
     line-height: 37px;
 }
