@@ -1,5 +1,5 @@
 *{
-    box-sixing: border-box;
+    box-sizing: border-box;
     padding:0;
     margin:0;
 }
@@ -16,10 +16,9 @@ body {
     font-family: "ZapfHumanist601BT";
     src: url("./font/ZapfHumanist601BT-Roman.otf")format("opentype");
 }
-
 @font-face{
     font-family: "SFPro";
-    src: url(./font/SF-Font-Pro.dmg)
+    src: url("./font/FontsFree-Net-SFProText-Regular.ttf")format("truetype");
 }
 
 .header{
@@ -82,7 +81,7 @@ body {
     text-decoration: none;
     font-size: 14px;
     color:#fffef2;
-    font-family: 'SFPro', sans-serif; 
+    font-family:'SFPro'; 
     
 /*    Roboto-M    */
 }
@@ -104,7 +103,7 @@ body {
 
 .content{
     margin-top: 70px;
-        
+/*    */
 }
 
 /* Steams Container*/
@@ -112,10 +111,9 @@ body {
 .flex-container{
     display: flex;
     flex-wrap: wrap;
-    margin: 172px 200px 86px 200px;
-    margin-bottom: 8px;
+    margin: 172px 200px 8px 200px;
     align-items: baseline;
-/*    width 1040px;*/
+    width: 1040px;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
@@ -128,7 +126,7 @@ body {
 }*/
 .item{
 /*    padding: 10px;*/
-    font-family: 'ZapfHumanist601BT', Arial, sans-serif;
+    font-family: 'ZapfHumanist601BT', sans-serif;
 }
 .item h2{
     font-size: 40px;
@@ -197,10 +195,11 @@ section{
 
 }
 .cropArticleImg{
-    width: 1342px;
-    height: 777px;
     position: relative;
     overflow: hidden;
+    width: 1342px;
+    height: 777px;
+    
     
 }
 .cropArticleImg img{
@@ -475,6 +474,23 @@ footer a:hover{
 .thefooter{
     width: 100%;
 }
+/*
+
+@media screen and (max-width:768px){
+    header{width: 100%;}
+    .announcementBar{width: 90%;}
+    #navbar{width:90%;} 
+    .paragraph{width:95%;}
+    .flex-container{margin-left: 150px;}
+    .steams hr{width: 134%; margin-left: 150px;}
+    .pageTitle{width: 165%;}
+    .paragraph{width: 90%;}
+    .cropArticleImg{width: 709px;}
+    .thefooter{width: 180%;}   
+    
+}
+*/
+
 
 /*
 
