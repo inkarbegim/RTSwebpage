@@ -249,11 +249,13 @@ aside{
     margin: 0px 600px;
     width: 640px;
     height: auto;
+    line-height: 26px;
 }
 .paragraph h3{
   font-family: 'SFPro';
     font-size: 36px;
     margin-bottom: 20px;
+    line-height: 43px;
 }
 .paragraph h5{
       font-family: 'SFPro';
